@@ -1,0 +1,514 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+ .root {
+ 	--padding-container: 100px 0;
+ 	--color-title: rgb(10, 178, 230);
+ }
+
+ body {
+ 	font-family: 'Poppins', sans-serif;
+ }
+
+ .container {
+ 	width: 90%;
+ 	max-width: 1200px;
+ 	margin: 0 auto;
+ 	overflow: hidden;
+ 	padding: var(--padding-container);
+ }
+
+ .hero {
+ 	width: 100%;
+ 	height: 100vh;
+ 	min-height: 600px;
+ 	max-height: 800px;
+ 	position: relative;
+ 	display: grid;
+ 	grid-template-rows: 100px 1fr;
+ 	color: white;
+ }
+
+ .hero::before {
+ 	content: "";
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(../Imagenes/img.jpg);
+ 	background-size: cover;
+ 	clip-path: inset(0 0 9% 0);
+ 	z-index: -1;
+ }
+
+ .nav {
+ 	--padding-container: 0;
+ 	height: 100%;
+ 	display: flex;
+ 	align-items: center;
+ }
+
+ .title {
+ 	font-weight: 300;
+ }
+
+ .nav_link {
+ 	margin-left: auto;
+ 	padding: 0;
+ 	display: grid;
+ 	grid-auto-flow: column;
+ 	grid-auto-columns: max-content;
+ 	gap: 1.5em;
+ 	font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ .items {
+ 	list-style: none;
+ }
+
+ .links, .acer_links, .cont_links, .blog_links {
+ 	color: rgba(255, 255, 255, 0.918);
+ 	text-decoration: none;
+ }
+
+ .nav_menu {
+ 	margin-left: auto;
+ 	cursor: pointer;
+ 	display: none;
+ }
+
+ .nav_img {
+ 	display: block;
+ 	width: 30px;
+ }
+
+ .nav_close {
+ 	display: var(--show, none);
+ }
+
+ .ver_img {
+ 	display: var(--show, none);
+ 	content: "";
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(../Imagenes/img.jpg);
+ 	background-size: cover;
+ 	z-index: -1;
+ }
+
+ .hero_container {
+ 	max-width: 800px;
+ 	--padding-container: 0;
+ 	display: grid;
+ 	grid-auto-rows: max-content;
+ 	align-content: center;
+ 	gap: 1em;
+ 	padding-bottom: 100px;
+ 	text-align: center;
+ }
+
+ .hero_title {
+ 	font-size: 2rem;
+ }
+
+ .hero_parrafo {
+ 	margin-bottom: 20px;
+ }
+
+ .about {
+ 	text-align: center;
+ }
+
+ .subtitulos {
+ 	color: var(--color-title);
+ 	font-size: 2rem;
+ 	margin-bottom: 25px;
+ }
+
+ .about_parrafo {
+ 	line-height: 1.7;
+ }
+
+ .about_main {
+ 	padding-top: 80px;
+ 	display: grid;
+ 	width: 90%;
+ 	margin: 0 auto;
+ 	gap: 1em;
+ 	overflow: hidden;
+ 	grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+ }
+
+ .about_icons {
+ 	display: grid;
+ 	gap: 1em;
+ 	justify-items: center;
+ 	width: 260px;
+ 	overflow: hidden;
+ 	margin: 0 auto;
+ }
+
+ .about_icon {
+ 	width: 40px;
+ }
+
+ .precio {
+ 	text-align: center;
+ }
+
+ .tabla_precio {
+ 	padding-top: 50px;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	gap: 2em;
+ 	justify-content: space-evenly;
+ 	align-items: center;
+ }
+
+ .precios_trabajo {
+ 	background-color: #242424;
+ 	text-align: center;
+ 	border-radius: 40px;
+ 	width: 300px;
+ 	padding: 50px;
+ 	--color-plan: #a1a1a5;
+ 	--color-precio: #919192;
+ 	--bg-cta: #145f5b;
+ 	--color-cta: #78b5fc;
+ 	--color-items: #3162aa;
+ }
+
+ .precios_trabajo--best {
+ 	padding: 50px 30px;
+ }
+
+ .plan {
+ 	color: var(--color-plan);
+ 	font-weight: 300;
+ }
+
+ .plan_precio {
+ 	font-size: 2.5rem;
+ 	color: var(--color-precio);
+ }
+
+ .plan_items {
+ 	margin-top: 35px;
+ 	display: grid;
+ 	gap: 1em;
+ 	font-weight: 300;
+ 	font-size: 1.2rem;
+ 	color: var(--color-items);
+ }
+
+ .testimonio {
+ 	background-color: rgb(247, 247, 247);
+
+ }
+
+ .testimonio_container {
+ 	padding: 3%;
+ 	grid-template-columns: 50px;
+ 	gap: 1em;
+ 	align-items: center;
+ }
+
+ .testimonio_body {
+ 	display: grid;
+ 	grid-template-columns: 1fr max-content;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	gap: 1em;
+ }
+
+ .testimonio_img {
+ 	width: 243px;
+ 	height: 250px;
+ 	border-radius: 50%;
+ 	object-fit: cover;
+ }
+
+ .testimonio_texts {
+ 	max-width: 800px;
+ 	font-family: Arial, Helvetica, sans-serif;
+ 	text-align: justify;
+ }
+
+ .footer {
+ 	padding: 3%;
+ 	background-color: rgb(43, 42, 42);
+ }
+
+ .footer_title {
+ 	font-weight: 300;
+ 	margin-bottom: 30px;
+ 	color: whitesmoke;
+ 	font-size: 25px;
+ 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ .footer_boletin {
+ 	color: whitesmoke;
+ 	font-size: 17px;
+ 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ .footer_container {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	border-bottom: 1px solid rgb(248, 163, 4);
+ 	padding-bottom: 30px;
+ }
+
+ .nav--footer {
+ 	padding-bottom: 20px;
+ 	display: grid;
+ 	gap: 1em;
+ 	grid-auto-flow: row;
+ 	height: 100%;
+ }
+
+ .nav_link--footer {
+ 	display: flex;
+ 	margin: 0;
+ 	margin-right: 20px;
+ 	flex-wrap: wrap;
+ 	gap: 1em;
+ }
+
+ .footer_inputs {
+ 	margin-top: 10px;
+ 	display: flex;
+ 	overflow: hidden;
+ }
+
+ .footer_input {
+ 	background-color: rgb(51, 50, 50);
+ 	height: 30px;
+ 	display: block;
+ 	padding-left: 12px;
+ 	border-radius: 6px;
+ 	font-size: 1rem;
+ 	outline: none;
+ 	border: none;
+ 	margin-right: 16px;
+ 	font-family: monospace;
+ 	color: rgb(179, 179, 180);
+ }
+
+ .footer_submit {
+ 	margin-left: auto;
+ 	display: inline-block;
+ 	height: 30px;
+ 	padding: 0 20px;
+ 	background-color: rgb(32, 32, 32);
+ 	height: 30px;
+ 	;
+ 	border: none;
+ 	font-size: 1rem;
+ 	color: rgb(180, 182, 182);
+ 	border-radius: 6px;
+ 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	cursor: pointer;
+ }
+
+ .footer_copy {
+ 	--padding-container: 30px 0px;
+ 	text-align: center;
+ 	color: azure;
+ 	font-size: 12px;
+ 	font-family: 'Courier New', Courier, monospace;
+ }
+
+ .footer_cpy {
+ 	font-weight: 300;
+ }
+
+ .footer_icons {
+ 	margin-bottom: 10px;
+ }
+
+ .footer_img {
+ 	width: 30px;
+ 	color: rgb(188, 190, 192);
+ }
+
+ ::placeholder{
+	font-style: italic;
+	
+}
+
+
+
+ /*Acondicionar la pagina para telefonos moviles*/
+
+ @media(max-width: 800px) {
+ 	.nav_menu {
+ 		display: block;
+ 	}
+
+ 	.items {
+ 		background-color: rgba(57, 57, 58, 0.507);
+ 		color: white;
+ 		padding: 9px 30px;
+ 		border-radius: 20px;
+ 	}
+
+ 	.nav_link--menu {
+ 		position: fixed;
+ 		background-color: #242424;
+ 		top: 0;
+ 		left: 0;
+ 		height: 100%;
+ 		width: 100%;
+ 		display: flex;
+ 		flex-direction: column;
+ 		justify-content: space-evenly;
+ 		align-items: center;
+ 		z-index: 100;
+ 		opacity: 0;
+ 		pointer-events: none;
+ 		transition: .7s opacity;
+ 	}
+
+ 	.nav_link--show {
+ 		--show: block;
+ 		opacity: 1;
+ 		pointer-events: unset;
+ 	}
+
+ 	.nav_close {
+ 		position: absolute;
+ 		top: 20px;
+ 		right: 40px;
+ 		width: 25px;
+ 		cursor: pointer;
+ 	}
+
+ 	.hero_title {
+ 		font-size: 2rem;
+ 	}
+
+ 	.about_main {
+ 		gap: 2em;
+ 	}
+
+ 	.about_icon:last-of-type {
+ 		grid-column: 1/-1;
+ 	}
+
+ 	.testimonio_container {
+ 		grid-template-columns: 30px 1fr 30px;
+ 	}
+
+ 	.testimonio_body {
+ 		grid-template-columns: 1fr;
+ 		grid-template-rows: max-content max-content;
+ 		gap: 3em;
+ 		justify-items: center;
+ 	}
+
+ 	.testimonio_img {
+ 		width: 200px;
+ 		height: 200px;
+ 	}
+
+ 	.footer_container {
+ 		flex-wrap: wrap;
+ 	}
+
+ 	.nav--footer {
+ 		width: 100%;
+ 		justify-items: center;
+ 	}
+
+ 	.nav_link--footer {
+ 		width: 100%;
+ 		justify-content: space-evenly;
+ 		margin: 0;
+ 	}
+
+ 	.footer_form {
+ 		padding: 5%;
+ 		width: 100%;
+ 		justify-content: space-evenly;
+ 	}
+
+ 	.footer_title {
+ 		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 	}
+
+ 	.footer_boletin {
+ 		font-size: 16px;
+ 		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 	}
+
+ 	.footer_input {
+ 		flex: 1;
+ 	}
+
+ 	::placeholder {
+ 		font-style: italic;
+ 	}
+
+ }
+
+ @media(max-width: 600px) {
+ 	.hero_title {
+ 		font-size: 2rem;
+ 	}
+
+ 	.hero_parrafo {
+ 		font-size: 1rem;
+ 	}
+
+ 	.subtitulos {
+ 		font-size: 1.5rem;
+
+ 	}
+
+ 	.precios_trabajo {
+ 		width: 90%;
+ 	}
+
+ 	.precios_trabajo--best {
+ 		width: 90%;
+ 	}
+
+ 	.testimonio_container {
+ 		grid-template-columns: 28px 1fr 28px;
+ 		gap: .9em;
+ 	}
+
+ 	.footer_title {
+ 		padding: 5%;
+ 	}
+
+ 	.footer_inputs {
+ 		flex-wrap: wrap;
+ 	}
+
+ 	.footer_input {
+ 		flex-basis: 100%;
+ 		margin: 0;
+ 		margin-bottom: 7%;
+ 	}
+
+ 	::placeholder {
+ 		font-style: italic;
+ 	}
+
+ 	.plan_precio {
+ 		padding: 6%;
+ 		font-size: 30px;
+ 	}
+
+ }
+
+ p {
+ 	font-family: Georgia, 'Times New Roman', Times, serif;
+ }
