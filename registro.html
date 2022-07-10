@@ -1,3 +1,21 @@
+<script>
+    function validateForm() {
+      var x = document.forms["formulario"]["nombre"].value;
+      //Pais
+      if (x == "" || x == null) {
+        alert("Tu nombre es importante.");
+        return false;
+      }
+  
+      var x = document.forms["formulario"]["numero"].value;
+      //Pais
+      if (x == "" || x == null) {
+        alert("Tu numero de contacto es importante.");
+        return false;
+      }
+    }
+    </script>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +28,7 @@
 </head>
 
 <body>
-    <form action="https://formsubmit.co/deimarpreciado50@gmail.com" method="post">
+    <form name="formulario" action="https://formsubmit.co/deimarpreciado50@gmail.com" method="post" onsubmit="return validateForm()">
         <header class="principal">
             <section class="principal_container container">
                 <ul class="nav_link nav_link--menu">
