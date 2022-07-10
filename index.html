@@ -633,12 +633,19 @@
                 border-radius: 20px;
             }
 
+            .items:hover{
+                background-color: #91919277;
+                cursor: pointer;
+            }
+
+
             .nav_link--menu {
                 position: fixed;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
+                top: 0px;
+                left: 8px;
+                height: 50%;
+                width: 90%;
+                padding: 7px 47px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
@@ -647,6 +654,32 @@
                 opacity: 0;
                 pointer-events: none;
                 transition: .7s opacity;
+            }
+            
+            .ver_img{
+                position: fixed;
+                top: 0;
+                left: 8px;
+                height: 55%;
+                width: 90%;
+                padding: 7px 53px; 
+                opacity: 0.99;
+            }
+
+            .nav_link--show {
+                --show: block;
+                opacity: 1;
+                pointer-events: unset;
+            }
+
+            .nav_close {
+                position: absolute;
+                top: 20px;
+                right: 40px;
+                width: 25px;
+                cursor: pointer;
+                padding: 2px 19px; 
+            
             }
             
             .registro:hover{
@@ -773,6 +806,35 @@
 
             .footer_title {
                 padding: 5%;
+            }
+            
+            .nav_link--menu {
+                position: fixed;
+                top: 0;
+                left: 8px;
+                height: 50%;
+                width: 78%;
+                padding: 7px 49px;
+               
+            }
+
+            .ver_img{
+                position: fixed;
+                top: 0;
+                left: 8px;
+                height: 55%;
+                width: 83%;
+                padding: 7px 48px; 
+                opacity: 0.99;
+            }
+
+            .items:hover{
+                background-color: #91919277;
+                cursor: pointer;
+            }
+
+            .nav_close{
+                padding: 3px 8px; 
             }
             
             .registro:hover{
