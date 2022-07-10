@@ -36,6 +36,8 @@
 <html>
 
 <head>
+    
+<head>
     <style type="text/css">
         .root {
             --padding-container: 100px 0;
@@ -131,6 +133,22 @@
             padding: 5px 100px;
         }
 
+        .boton {
+            padding: 7px 55px;
+            font-family: monospace;
+            font-size: 13px;
+        }
+
+        .rest {
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        .rest:hover {
+            background-color: rgba(255, 0, 0, 0.63);
+            cursor: pointer;
+        }
+
         ::placeholder {
             font-family: 'Courier New', Courier, monospace;
             color: #f0eeee8c;
@@ -147,9 +165,24 @@
             }
 
             .titulo {
-                font-size: 100;
+                font-size: 20px;
             }
 
+            .boton {
+                padding: 7px 55px;
+                font-family: monospace;
+                font-size: 13px;
+            }
+
+            .rest {
+                font-family: monospace;
+                font-size: 12px;
+            }
+
+            .rest:hover {
+                background-color: rgba(255, 0, 0, 0.63);
+                cursor: pointer;
+            }
 
             .nombre,
             .numero {
@@ -186,16 +219,55 @@
                 justify-self: center;
                 color: white;
                 text-decoration: none;
-                padding: 5px 60px;
+                padding: 5px 30px;
             }
 
             textarea {
                 background-color: rgba(57, 57, 58, 0.685);
                 justify-self: center;
                 color: white;
-                padding: 5px 60px;
+                padding: 5px 35px;
             }
 
+            .nav_link {
+                padding: 5px;
+                margin-left: 60%;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            .rest {
+                background-color: rgba(57, 57, 58, 0.541);
+                justify-self: center;
+                color: white;
+                padding: 7px 40px;
+                border-radius: 20px;
+                font-family: monospace;
+                font-size: 10px;
+            }
+
+            .boton {
+                background-color: rgba(57, 57, 58, 0.541);
+                justify-self: center;
+                color: white;
+                padding: 7px 55px;
+                border-radius: 20px;
+                font-family: monospace;
+                font-size: 10px;
+            }
+
+            .titulo {
+                font-size: 16px;
+            }
+
+            .principal_container {
+                background-color: rgba(156, 156, 155, 0.425);
+                max-width: 800px;
+                height: 510px;
+                display: grid;
+                gap: 1em;
+                padding-bottom: 87px;
+                text-align: center;
+            }
         }
     </style>
 </head>
