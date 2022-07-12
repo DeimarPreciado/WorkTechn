@@ -15,7 +15,6 @@
       }
         var a = document.forms['formulario']['_next'].value;
         if (a == true) {
-            alert("Tu mensaje fue enviado correctamente, confirma que no eres un robot.");
         }else{
             alert("Tu registro no se envio.");
         }
@@ -52,7 +51,9 @@
             </section>
         </header>
                 <input type="hidden" name="_next" value="https://deimarpreciado.github.io/WorkTechn/">
-                <input type="hidden" name="_autoresponse" value="Tu mensaje fue enviado correctamente!!">
+            <script>
+               alert("Tu mensaje fue enviado correctamente, confirma que no eres un robot.");
+            </script>
     </form>
 </body>
 
