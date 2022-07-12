@@ -293,6 +293,26 @@
             border-radius: 50%;
         }
         
+        .registro {
+
+            animation-name: parpadeo;
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+            -webkit-animation-name: parpadeo;
+            -webkit-animation-duration: 1.5s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-iteration-count: infinite;
+            background-color: rgb(46, 45, 45);
+        }
+
+        @keyframes parpadeo {
+            0% {opacity: 8.0;}
+            50% {opacity: 0.7;}
+            100% {opacity: 8.0;}
+        }
+        
         .hero::before {
             content: "";
             position: absolute;
