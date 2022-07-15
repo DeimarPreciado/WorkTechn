@@ -46,7 +46,15 @@
         </header>
                 <input type="hidden" name="_next" value="https://deimarpreciado.github.io/WorkTechn/">
     </form>
-<script type="text/javascript">window.location="index.html"</script>
+        
+<script type="text/javascript">
+    session_start();
+
+    if (isset($_POST['volver'])) {
+        session_destroy();
+        header("location: index.html");
+    } 
+</script>
         
 </body>
 
